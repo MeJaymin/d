@@ -1,0 +1,17 @@
+ $(document).ready(function () {
+        
+    CKEDITOR.replace( 'description' );
+
+    $("#adddiagnostics_form").validate({
+        rules: {
+            p_id: {
+                required: true
+            }
+        },
+         messages: {
+            aboutus_title: {
+                required: 'Title Field is required'
+            }
+        },
+    });
+});

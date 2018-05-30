@@ -1,0 +1,534 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Gift Cast</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.png"
+        ]
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).on('scroll load', function(){
+                var cur_pos = $(this).scrollTop();
+                 var top = $('.spaceFixed').offset().top,
+                     bottom = top + $('.spaceFixed').outerHeight();
+                        if (cur_pos >= top) {
+                            $('.line_bg').addClass('affix');
+                        }
+                        else{
+                            $('.line_bg').removeClass('affix');  
+
+                        }
+
+            })
+            $('.close-overlay, .close-model, .suppot-toggle').on('click', function(){
+                $('body').toggleClass('open-support-popup');
+            })
+        })
+    </script>
+    <style amp-custom>
+         *{box-sizing: border-box;}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{margin-right:-15px;margin-left:-15px}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{position:relative;min-height:1px;padding-right:15px;padding-left:15px}.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}
+    	body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Lato', sans-serif;
+        background: #f2f2f2;
+        color: #666666;
+        font-size: 20px;
+        line-height: 1.7em;
+    }
+
+    header a{
+       display: block;
+        margin: 0 auto;
+        width: 228px;
+    }
+    .pull-right {
+        float: right;
+    }
+    .pull-left {
+        float: left;
+    }
+    header {
+        text-align: center;
+        padding: 20px;
+        background: #FFF;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .text-left {
+        text-align: left;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .app-girl {
+        max-width: 600px;
+        padding: 50px;
+        margin: 0 0 0 auto;
+    }
+    .banner {
+        background: red;
+        background: url('images/banner-bg.jpg') center center repeat;
+        overflow: hidden;
+        clear: both;
+    }
+    .max_width_600 {
+        max-width: 600px;
+    }
+    .flex-row {
+        display: flex;
+    }
+    .flex-col {
+        width: 100%;
+        padding: 40px 20px
+    }
+    .heading_banner {
+        margin-top: 80px;
+        background: rgb(107, 160, 183) none repeat scroll 0 0;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        font-weight: 300;
+        padding: 15px;
+        text-align: center;
+        line-height: normal;
+    }
+    .pad_0 {
+        padding: 0;
+    }
+    .banner-text {
+        color: rgb(102, 102, 102);
+        font-size: 22px;
+        line-height: 1.7em;
+        padding: 40px;
+        text-align: center;
+    }
+    .flex-vm {
+        text-align: center;
+    }
+    .flex-vm:before {
+        vertical-align: middle;
+        display: inline-block;
+        content: "";
+        height: 100%;
+    }
+    .block-style {
+        display: inline-block;
+        max-width: 80%;
+        vertical-align: middle;
+    }
+    .app_icons a {
+        display: inline-block;
+        max-width: 230px;
+        padding: 0 5px;
+        width: 49%;
+    }
+    .line_bg {
+        height: 37px;
+        background: #f38120;
+        display: block;
+    }
+    .block-style h2 {
+        color: rgb(107, 160, 183);
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1em;
+    }
+    .block-style h2::after {
+        background: rgb(243, 129, 32) none repeat scroll 0 0;
+        content: "";
+        display: block;
+        height: 4px;
+        margin: 30px auto;
+        width: 100px;
+    }
+    .footer {
+        background: #666666;
+        padding: 30px;
+        color: #FFF;
+        overflow: hidden;
+    }
+    .footer a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        opacity: 0.5;
+    }
+    .social_icon a {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+    .social_icon h3 {
+        font-weight: normal;
+        margin: 0 0 14px;
+    }
+    .copy-right {
+        padding: 30px 0;
+    }
+    .copy-right a{
+        padding: 0 5px;
+    }
+    .mobile-link,
+    .device-enable {
+        display: none;
+    }
+    .clearfix {
+        clear: both;
+    }
+    .visible-mobile{
+        display: none;
+    }
+
+    .popup-support {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      position: fixed;
+      text-align: center;
+      top: 0;
+      width: 100%;
+    }
+    .supprt-model {
+      background: #ffffff none repeat scroll 0 0;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+      margin: 0 auto;
+      max-width: 570px;
+      padding: 0 0px 20px;
+      width: 100%;
+      position: relative;
+      z-index: 10
+    }
+    .model-header {
+      background: #5ba1b5 none repeat scroll 0 0;
+      display: block;
+      font-size: 24px;
+      padding: 15px;
+      vertical-align: top;
+      position: relative;
+    }
+    .model-header h3 {
+      color: #ffffff;
+      font-weight: normal;
+      margin: 0;
+    }
+    .support-content strong,
+    .support-content a {
+      color: #5ba1b5;
+    }
+    .support-content a{
+        text-decoration: none;
+
+    }
+    .close-overlay{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .close-model {
+      height: 30px;
+      left: 18px;
+      position: absolute;
+      top: 17px;
+      width: 30px;
+    }
+    .close-model::before, .close-model::after {
+      background: #ffffff none repeat scroll 0 0;
+      content: "";
+      display: inline-block;
+      height: 30px;
+      left: 13px;
+      position: absolute;
+      transform: rotate(45deg);
+      width: 2px;
+    }
+    .close-model::after {
+      transform: rotate(-45deg);
+    }
+    .popup-support{
+        display: none;
+    }
+    .open-support-popup{
+        overflow: hidden;
+    }
+    .open-support-popup .popup-support{
+        display: flex;
+    }
+    .small-p{
+        font-size: 80%;
+    }
+    .email-link{
+        font-size: 125%; font-weight: 500;
+    }
+
+    @media(max-width: 1199px) {
+        body {
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+        .block-style h2::after {
+            margin: 15px auto 0;
+        }
+        .block-style h2 {
+            font-size: 24px;
+        }
+        .heading_banner {
+            font-size: 30px;
+        }
+        .app-girl {
+            padding: 20px;
+        }
+        .banner-text {
+            font-size: 15px;
+            padding: 0;
+        }
+        .heading_banner {
+            margin-top: 50px;
+        }
+    }
+    @media(max-width: 767px) {
+        header a{width: 160px;}
+        .banner-text, body {
+            font-size: 14px;
+        }
+        .container {
+            padding: 0;
+        }
+        .app-girl {
+            padding: 40px;
+        }
+        .heading_banner {
+            margin-top: 0;
+        }
+        .device-enable,
+        .device-enable .banner-text {
+            display: block;
+        }
+        .device-enable .banner-text {
+            padding: 20px;
+        }
+        .banner-text,
+        .app_icons {
+            display: none;
+        }
+        .banner-text p {
+            margin: 0;
+        }
+        .line_bg {
+            height: 70px;
+        }
+        .device-desabled {
+            display: none;
+        }
+        .mobile-link {
+            color: rgb(255, 255, 255);
+            display: block;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 70px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .block-style h2::after,
+        .flex-vm::before {
+            display: none;
+        }
+        .block-style {
+            max-width: 100%;
+        }
+        body {
+            background: rgb(255, 255, 255) none repeat scroll 0 0;
+        }
+        .block-style p {
+            padding: 10px 20px;
+        }
+        .block-style h2 {
+            background: rgb(242, 242, 242) none repeat scroll 0 0;
+            display: block;
+            font-size: 24px;
+            padding: 20px;
+            margin: 0;
+        }
+        .block-style h2 br {
+            display: none;
+        }
+        .copy-right {
+            text-align: center;
+            padding: 15px 0 0 0;
+        }
+        .social_icon a {
+            margin: 0 15px;
+        }
+        .footer {
+            padding: 20px;
+        }
+        .max_width_600{max-width: 100%;}
+        .banner .col-sm-6.col-xs-12.text-right{text-align: center;}
+        .app-girl{max-width: 100%; padding: 15%;}
+        .line_bg.affix {
+          left: 0;
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        .fix_app{
+            display: block;
+            float: left;
+            width: 100%;
+        }
+        .spaceFixed{
+            height: 70px;
+            display: block;
+        }
+        .visible-mobile{
+            display:inline;
+        }
+        .visible-desktop{
+            display:none;
+        }
+        .block-style p {
+            margin: 0;
+            padding: 20px;
+        }
+
+        
+    }
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+
+  <body>
+    <header>
+    	<a href="index.html">
+    		<amp-img alt="Gift Cast" src="images/desktop-logo.png" width="228" height="62" layout="responsive"></amp-img>
+    	</a>
+    </header>
+    <section class="banner">
+    	<div class="container">
+    		<div class="row">
+        		<div class="col-sm-6 pull-right col-xs-12">
+        			<div class="max_width_600 text-center">
+    	    			<div class="heading_banner">Live in the Present!</div>
+    	    			<div class="banner-text">
+                            <p>Every relationship is unique, that’s why Giftcast gives you infinite ways to show how you feel. With a <strong>Video Gift Card&trade;</strong> that recipients can spend however they want, you’ll be the life of the party.</p>            
+                        </div>
+                        <div class="app_icons">
+                            <a href=""><amp-img alt="Gift Cast" src="images/ios.png" width="219" height="64" layout="responsive"></amp-img></a>
+                            <a href=""><amp-img alt="Gift Cast" src="images/gogle_app.png" width="219" height="64" layout="responsive"></amp-img></a>
+                        </div>
+        			</div>
+        		</div>
+                <div class="col-sm-6 col-xs-12  text-right">
+                    <div class="app-girl"><amp-img alt="Gift Cast"  src="images/girl.png" width="460" height="500" layout="responsive"></amp-img></div>
+                </div>
+            </div>
+    	</div>
+    </section>
+    
+    <section class="spaceFixed">
+        <div class="line_bg"><a class="mobile-link" href="">Download the app</a></div>
+    </section>
+    
+    <section class="device-enable">
+        <div class="banner-text">
+            <p>Every relationship is unique, that’s why Giftcast gives you infinite ways to show how you feel. With a <strong>Video Gift Card&trade;</strong> that recipients can spend however they want, you’ll be the life of the party.</p>            
+        </div>
+    </section>
+    <section class="main">
+        <div class="flex-row pad_0 ">
+            <div class="flex-col pad_0 device-desabled">
+                <amp-img alt="Gift Cast" src="images/iphone1.jpg" width="960" height="533" layout="responsive"></amp-img>
+            </div>
+            <div class="flex-col pad_0 flex-vm">
+                <div class="block-style">
+                    <h2>Record a video<br> on your device</h2>
+                    <p>Your GiftCast video brings your intention to life and transports you to the party if you can’t be there. </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-row pad_0">
+            
+            <div class="flex-col pad_0 flex-vm">
+                <div class="block-style">
+                    <h2>Add any value<br> you want</h2>
+                    <p>More than just money. GiftCast makes a more personal connection. When someone receives a GiftCast they can spend the money wherever they’d like.</p>
+
+                </div>
+            </div>
+            <div class="flex-col pad_0 device-desabled">
+                <amp-img alt="Gift Cast" src="images/iphone2.jpg" width="960" height="533" layout="responsive"></amp-img>
+            </div>
+        </div>
+        <div class="flex-row pad_0 ">
+            <div class="flex-col pad_0 device-desabled">
+                <amp-img alt="Gift Cast" src="images/iphone3.jpg" width="960" height="533" layout="responsive"></amp-img>
+            </div>
+            <div class="flex-col pad_0 flex-vm">
+                <div class="block-style">
+                    <h2>Hit send &<br> make a memory</h2>
+                    <p>Even when the money is gone your gift memory will be archived for the recipient to go back to if they ever need a smile.</p>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 pull-right">
+                    <div class="social_icon text-center">
+                        <h3>Follow Us</h3>
+                        <div class="">
+                            <a target="_blank" href="https://www.facebook.com/GiftCast-1749903395028756/"><amp-img alt="Facebook" src="images/facebook.png" width="15" height="28"></amp-img></a>
+                            <a target="_blank" href="https://twitter.com/giftcast1"><amp-img alt="Twitter" src="images/twitter.png" width="30" height="25"></amp-img></a>
+                            <a target="_blank" href="https://www.instagram.com/giftcast/"><amp-img alt="Instagram" src="images/instagram.png" width="26" height="27"></amp-img></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="copy-right">
+                        <a class="visible-mobile" href="support.html">Support</a> <a class="suppot-toggle visible-desktop" href="javascript:void(0);">Support</a> | <a href="terms-and-conditions.html">Terms of Use</a>  |  <a href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- support popup -->
+    <div class="popup-support">
+        <div class="supprt-model">
+            <div class="model-header"><span class="close-model"></span><h3>Support</h3></div>
+            <div class="support-content">
+                <p>
+                    <strong>We are here to help <br>when you need assistance.</strong>
+                </p>
+                <p class="small-p">Please contact our Customer Care team at</p>
+
+                <p><a  class="email-link" href="mailto:customercare@giftcast.me" class="email">customercare@giftcast.me</a></p>
+            </div>
+        </div>
+        <div class="close-overlay"></div>
+    </div>
+  </body>
+</html>

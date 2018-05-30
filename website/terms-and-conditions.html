@@ -1,0 +1,560 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Gift Cast</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.png"
+        ]
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.close-overlay, .close-model, .suppot-toggle').on('click', function(){
+                $('body').toggleClass('open-support-popup');
+            })
+        })
+    </script>
+    <style amp-custom>
+         *{box-sizing: border-box;}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{margin-right:-15px;margin-left:-15px}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{position:relative;min-height:1px;padding-right:15px;padding-left:15px}.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}
+    	body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Lato', sans-serif;
+        background: #f2f2f2;
+        color: #666666;
+        font-size: 20px;
+        line-height: 1.7em;
+    }
+
+    header a{
+       display: block;
+        margin: 0 auto;
+        width: 228px;
+    }
+    .pull-right {
+        float: right;
+    }
+    .pull-left {
+        float: left;
+    }
+    header {
+        text-align: center;
+        padding: 20px;
+        background: #FFF;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .text-left {
+        text-align: left;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .app-girl {
+        max-width: 600px;
+        padding: 50px;
+        margin: 0 0 0 auto;
+    }
+    .banner {
+        background: red;
+        background: url('images/banner-bg.jpg') center center repeat;
+        overflow: hidden;
+        clear: both;
+    }
+    .max_width_600 {
+        max-width: 600px;
+    }
+    .flex-row {
+        display: flex;
+    }
+    .flex-col {
+        width: 100%;
+        padding: 40px 20px
+    }
+    .heading_banner {
+        margin-top: 80px;
+        background: rgb(107, 160, 183) none repeat scroll 0 0;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        font-weight: 300;
+        padding: 15px;
+        text-align: center;
+        line-height: normal;
+    }
+    .pad_0 {
+        padding: 0;
+    }
+    .banner-text {
+        color: rgb(102, 102, 102);
+        font-size: 22px;
+        line-height: 1.7em;
+        padding: 40px;
+        text-align: center;
+    }
+    .flex-vm {
+        text-align: center;
+    }
+    .flex-vm:before {
+        vertical-align: middle;
+        display: inline-block;
+        content: "";
+        height: 100%;
+    }
+    .block-style {
+        display: inline-block;
+        max-width: 80%;
+        vertical-align: middle;
+    }
+    .app_icons a {
+        display: inline-block;
+        max-width: 230px;
+        padding: 0 5px;
+        width: 49%;
+    }
+    .line_bg {
+        height: 37px;
+        background: #f38120;
+        display: block;
+    }
+    .block-style h2 {
+        color: rgb(107, 160, 183);
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1em;
+    }
+    .block-style h2::after {
+        background: rgb(243, 129, 32) none repeat scroll 0 0;
+        content: "";
+        display: block;
+        height: 4px;
+        margin: 30px auto;
+        width: 100px;
+    }
+    .footer {
+        background: #666666;
+        padding: 30px;
+        color: #FFF;
+        overflow: hidden;
+    }
+    .footer a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    .footer a:hover {
+        opacity: 0.5;
+    }
+    .social_icon a {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+    .social_icon h3 {
+        font-weight: normal;
+        margin: 0 0 14px;
+    }
+    .copy-right {
+        padding: 30px 0;
+    }
+    .copy-right a{
+        padding: 0 5px;
+    }
+    .mobile-link,
+    .device-enable {
+        display: none;
+    }
+    .clearfix {
+        clear: both;
+    }
+    .visible-mobile{
+        display: none;
+    }
+
+    .popup-support {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      position: fixed;
+      text-align: center;
+      top: 0;
+      width: 100%;
+    }
+    .supprt-model {
+      background: #ffffff none repeat scroll 0 0;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+      margin: 0 auto;
+      max-width: 570px;
+      padding: 0 0px 20px;
+      width: 100%;
+      position: relative;
+      z-index: 10
+    }
+    .model-header {
+      background: #5ba1b5 none repeat scroll 0 0;
+      display: block;
+      font-size: 24px;
+      padding: 15px;
+      vertical-align: top;
+      position: relative;
+    }
+    .model-header h3 {
+      color: #ffffff;
+      font-weight: normal;
+      margin: 0;
+    }
+    .support-content strong,
+    .support-content a {
+      color: #5ba1b5;
+    }
+    .support-content a{
+        text-decoration: none;
+
+    }
+    .close-overlay{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .close-model {
+      height: 30px;
+      left: 18px;
+      position: absolute;
+      top: 17px;
+      width: 30px;
+    }
+    .close-model::before, .close-model::after {
+      background: #ffffff none repeat scroll 0 0;
+      content: "";
+      display: inline-block;
+      height: 30px;
+      left: 13px;
+      position: absolute;
+      transform: rotate(45deg);
+      width: 2px;
+    }
+    .close-model::after {
+      transform: rotate(-45deg);
+    }
+    .popup-support{
+        display: none;
+    }
+    .open-support-popup{
+        overflow: hidden;
+    }
+    .open-support-popup .popup-support{
+        display: flex;
+    }
+    /*css of iner*/
+    .page-link-header{
+        background: #4d4d4d;
+        padding: 15px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .page-link-header a{
+        color: #FFF;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 2%;
+    }
+    .page-link-header a.active{
+        font-weight: bold;
+    }
+    .content_section{
+        padding: 5% 30px 10px;
+        background: #e6e6e6;
+    }
+    .content_section h3,
+    .content_section h1{
+        margin-bottom: 10px;
+    }
+    .content_section p{
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+
+    @media(max-width: 1199px) {
+        body {
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+        .block-style h2::after {
+            margin: 15px auto 0;
+        }
+        .block-style h2 {
+            font-size: 24px;
+        }
+        .heading_banner {
+            font-size: 30px;
+        }
+        .app-girl {
+            padding: 20px;
+        }
+        .banner-text {
+            font-size: 15px;
+            padding: 0;
+        }
+        .heading_banner {
+            margin-top: 50px;
+        }
+    }
+    @media(max-width: 767px) {
+        header a{width: 160px;}
+        .banner-text, body {
+            font-size: 14px;
+        }
+        .container {
+            padding: 0;
+        }
+        .app-girl {
+            padding: 40px;
+        }
+        .heading_banner {
+            margin-top: 0;
+        }
+        .device-enable,
+        .device-enable .banner-text {
+            display: block;
+        }
+        .device-enable .banner-text {
+            padding: 20px;
+        }
+        .banner-text,
+        .app_icons {
+            display: none;
+        }
+        .banner-text p {
+            margin: 0;
+        }
+        .line_bg {
+            height: 70px;
+        }
+        .device-desabled {
+            display: none;
+        }
+        .mobile-link {
+            color: rgb(255, 255, 255);
+            display: block;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 70px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .block-style h2::after,
+        .flex-vm::before {
+            display: none;
+        }
+        .block-style {
+            max-width: 100%;
+        }
+        body {
+            background: rgb(255, 255, 255) none repeat scroll 0 0;
+        }
+        .block-style p {
+            padding: 10px 20px;
+        }
+        .block-style h2 {
+            background: rgb(242, 242, 242) none repeat scroll 0 0;
+            display: block;
+            font-size: 24px;
+            padding: 20px;
+            margin: 0;
+        }
+        .block-style h2 br {
+            display: none;
+        }
+        .copy-right {
+            text-align: center;
+            padding: 15px 0 0 0;
+        }
+        .social_icon a {
+            margin: 0 15px;
+        }
+        .footer {
+            padding: 20px;
+        }
+        .max_width_600{max-width: 100%;}
+        .banner .col-sm-6.col-xs-12.text-right{text-align: center;}
+        .app-girl{max-width: 100%; padding: 15%;}
+        .line_bg.affix {
+          left: 0;
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        .fix_app{
+            display: block;
+            float: left;
+            width: 100%;
+        }
+        .spaceFixed{
+            height: 70px;
+            display: block;
+        }
+        .visible-mobile{
+            display:inline;
+        }
+        .visible-desktop{
+            display:none;
+        }
+        .page-link-header{
+            font-size: 18px;
+        }
+
+        
+    }
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+
+  <body>
+    <header>
+    	<a href="index.html">
+    		<amp-img alt="Gift Cast" src="images/desktop-logo.png" width="228" height="62" layout="responsive"></amp-img>
+    	</a>
+    </header>
+    <div class="page-link-header">
+        <div class="container">
+            <a href="terms-and-conditions.html" class="active">Terms and Conditions</a> <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+    </div>
+    <section class="content_section">
+        <div class="container">
+            <h1>Terms and conditions</h1>
+            <p>The following terms and conditions ("Terms and Conditions") govern your use of the World Wide Web Site (including mobile applications) located at www.giftcast.me (the “Service”). By accessing, viewing, or using this Service or the content, material, services or any other item or offering available on or through this Service, you represent that you have read and understand these Terms and Conditions, and you agree to them and intend to be legally bound by them. If you do not agree to and intend to be legally bound by these Terms and Conditions, you are not granted permission to use this Service and must exit immediately. GiftCast LLC. (“GiftCast”) reserves the right at any time to modify, alter, or update these Terms and Conditions. Notice of any new or revised Terms and Conditions, as well as the location of the new or revised Terms and Conditions, will be posted on the Service for at least 60 days after the change. It is the obligation of users visiting the Service before the change to learn of changes to the Terms and Conditions since their last visit. Any change to these Terms and Conditions shall be effective as to any visitor who has visited the Service before the change was made. The Service and Service Materials (defined below) are available only to individuals at least 18 years of age, and to individuals between 13 and 18 years of age who have their parent’s consent to use the Service or Service Materials and to be bound by these Terms and Conditions. If you are not at least 18 years of age, or if you are between 13 and 18 years of age but do not have your parent’s consent to use the Service or Service Materials and to be bound by these Terms and Conditions, you are not granted any right or permission to use the Service or Service Materials and you must exit the Service immediately.</p>
+
+            <h3>1. Proprietary Rights</h3>
+            <p>All works of authorship, information, content, functional components, software, downloads, upgrades, documentation, service packages, services, and material and any other item or offering appearing on, made available via, or contained in this Service (“Service Materials”) are protected by law, including, but not limited to, United States copyright law. Except as explicitly stated in the Service, the entirety of the Service Materials (including, without limitation, data, illustrations, graphics, audio, video, photographs, pictures, recordings, drawings, sketches, artwork, images, text, forms, algorithms, and look and feel attributes), and any and all right, title, and interest therein, are exclusively the property of GiftCast (including, without limitation, all copyrights therein) or GiftCast’s affiliates, licensors or suppliers or other respective intellectual property owners. All rights reserved. GiftCast owns a copyright in this Service as a collective work and compilation, and in the selection, coordination, arrangement, organization, and enhancement of the Service Materials. Removing or altering any copyright notice or any other proprietary notice on any Service Materials is strictly prohibited. Any reproduction, distribution, performance, display, preparation of derivative works based upon, framing, capturing, harvesting, or collection of, or any Service Materials or any other proprietary information of GiftCast without GiftCast’s advance written consent, is prohibited. You may use this Service and the Service Materials only for your personal, non-commercial purposes. Any commercial use of the Service and/or any or all Service Materials, in whole or in part, without the prior written consent of GiftCast is prohibited. All names, trademarks, service marks, symbols, slogans, and logos appearing on the Service are proprietary to GiftCast, its affiliates, partners, licensors, or suppliers or other respective intellectual property owners. Any misuse or other unauthorized use of these trademarks is expressly prohibited and may violate federal and state trademark law.</p>
+
+            <h3>2. Materials Submitted to the Service</h3>
+            <p>This Service may allow you to directly or indirectly post, select, designate, or provide information, photographs, questions, and other materials to this Service. GiftCast does not guarantee the accuracy or completeness of any postings or other contributions to the Service and is not responsible or liable for any postings or other contributions. By posting, selecting, designating, or providing information, photographs, questions, and/or other materials (“User Materials”), you represent, warrant, and covenant that you have the full legal right to post, select, designate, and/or provide the User Materials and that use of the User Materials by you, GiftCast, and all other persons and entities will not (a) infringe any intellectual property rights of any person or entity or any rights of publicity, personality, or privacy of any person or entity, including, but not limited to, as a result of your failure to obtain consent to post personally identifying or otherwise private information about a person; (b) violate any law, statute, ordinance, or regulation; (c) be defamatory, libelous or trade libelous, unlawfully threatening, or unlawfully harassing; (d) be obscene or otherwise violate any community or Internet standard; (e) contain any viruses, Trojan horses, worms, time bombs, cancelbots, or other computer programming routines that damage, detrimentally interfere with, surreptitiously intercept, or expropriate any system, data or personal information, or that facilitate or enable such or that are intended to do any of the foregoing; (f) result in product liability, tort, breach of contract, personal injury, death, or property damage; (g) constitute misappropriation of any trade secret or know-how; or (h) constitute disclosure of any confidential information owned by any third party. Upon your posting, selecting, designating, or providing of User Materials, you grant GiftCast, and GiftCast thereby accepts, a worldwide, perpetual, non-terminable, irrevocable, transferable, license to access, use, distribute, perform, reproduce, display, modify, create derivative works based upon, and sublicense, and to permit others to access, use, distribute, perform, reproduce, display, modify, create derivative works based upon, and sublicense, the User Materials for the purpose of providing the Service and Service products and services and for all other business purposes of GiftCast, all without any compensation to you whatsoever. Further, GiftCast is free to use any ideas, concepts, photographs, methods, know-how, techniques, and processes contained in any User Materials for any purpose whatsoever, including, but not limited to, creating and marketing products, information, or services using such information. GiftCast may remove User Materials from the Service for any or no reason, in GiftCast’s sole discretion, with or without notice. GiftCast shall not be responsible for changes, modifications, or removal any User Materials. If you believe that any content or postings on this Service violate your intellectual property or other rights, please follow our Complaint Procedure in Section 9 of these Terms and Conditions.</p>
+
+            <h3>3. Third Party Materials, Products and Services</h3>
+            <p>Parties other than GiftCast may provide products or services via or referenced on the Service. GiftCast expressly disclaims any and all responsibility for or related to (a) the accuracy and completeness of any and all third-party information, products and/or services or (b) the transactions you conduct or enter into with these third parties. </p>
+
+            <h3>4. Nature of the Internet</h3>
+            <p>Given the nature of the Internet, the transmission of any communication or material to GiftCast via the Service or Internet electronic mail, whether encrypted or otherwise, cannot be guaranteed as, and is not represented to be, secure. Alternative to communicating via the Internet or electronic mail, GiftCast can be contacted by regular mail at PO Box 49148, Charlotte, NC 28277.</p>
+
+            <h3>5. Privacy Statement</h3>
+            <p>GiftCast has a Privacy Statement setting out GiftCast’s online information gathering and dissemination practices with respect to the Service. Click Here to view the Privacy Statement, which is incorporated into these Terms and Conditions by reference, as if set forth fully herein.</p>
+
+            <h3>6. Disclaimer of Warranty and Liability</h3>
+            <p>THIS SERVICE AND THE SERVICE MATERIALS ARE MADE AVAILABLE “AS IS” AND “WITH ALL FAULTS.” USE OF THIS SERVICE AND THE SERVICE MATERIALS IS ENTIRELY AT YOUR OWN RISK. GIFTCAST MAKES NO REPRESENTATIONS OR WARRANTIES, AND DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES, WITH RESPECT TO THIS SERVICE, THE SERVICE MATERIALS, AND THE USER MATERIALS, EXPRESS OR IMPLIED, WRITTEN OR ORAL, ARISING FROM COURSE OF DEALING, COURSE OF PERFORMANCE, USAGE OF TRADE, OR OTHERWISE, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, SYSTEMS INTEGRATION, NON-INTERFERENCE, QUALITY, TITLE, AND NON-INFRINGEMENT. THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY, COMPLETENESS, AND EFFORT WITH REGARD TO THE SERVICE AND ANY AND ALL SERVICE MATERIALS AND USER MATERIALS IS WITH YOU. GIFTCAST SHALL NOT HAVE ANY RESPONSIBILITY OR ASSUME ANY LIABILITY FOR ANY DATA, INFORMATION, OR MATERIAL UPLOADED TO THE SERVICE, MADE AVAILABLE VIA THE SERVICE, OR TRANSMITTED BY YOU OR ANY THIRD PARTY, OR FOR ANY MISTAKES, DEFAMATION, SLANDER, LIBEL, OMISSIONS, FALSEHOODS, OBSCENITY, PORNOGRAPHY, INDECENCY, LEWDNESS, HARASSMENT, THREATS, ABUSE, OR PROFANITY YOU MAY ENCOUNTER IN USING THE SERVICE, SERVICE MATERIALS, OR USER MATERIALS. NEITHER GIFTCAST, NOR ANY OF ITS DIRECTORS, OFFICERS, MEMBERS, EMPLOYEES, CONTRACTORS, AGENTS, OR REPRESENTATIVES SHALL BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, EXTRA-CONTRACTUAL, OR PUNITIVE DAMAGES OF ANY KIND WHATEVER, INCLUDING, WITHOUT LIMITATION, LOST REVENUES OR LOST PROFITS, WHICH MAY OR DO RESULT FROM THE SERVICE, THE SERVICE MATERIALS, THE USER MATERIALS, OR THE USE OF, ACCESS TO, OR INABILITY TO ACCESS OR USE THIS SERVICE, THE SERVICE MATERIALS, OR THE USER MATERIALS, REGARDLESS OF LEGAL THEORY (INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE OR STRICT LIABILITY), WHETHER OR NOT ANY PARTY HAD BEEN ADVISED OF THE POSSIBILITY OR PROBABILITY OF SUCH DAMAGES, AND EVEN IF THE REMEDIES OTHERWISE AVAILABLE FAIL OF THEIR ESSENTIAL PURPOSE. UNDER NO CIRCUMSTANCES WILL THE TOTAL LIABILITY OF GIFTCAST TO YOU OR ANY OTHER PERSON OR ENTITY IN CONNECTION WITH, BASED UPON, OR ARISING FROM THIS SERVICE, THE SERVICE MATERIALS, OR THE USER MATERIALS EXCEED THE PRICE PAID BY YOU FOR USE OF THIS SERVICE.</p>
+
+            <h3>7. Corrections and Changes to Service and Service Materials</h3>
+            <p>GiftCast endeavors to keep the Service and Service Materials on, in, and through this Service up-to-date. Without limiting anything else in these Terms and Conditions or otherwise, GiftCast is not responsible for any errors or omissions in the Service or Service Materials. GiftCast may make changes to the Service or Service Materials, or to the products, information, or services made available in connection with this Service, at any time with or without notice, and GiftCast makes no commitment to update the information contained on or in this Service. GiftCast reserves the right to terminate your access to this Service in the event that you violate these Terms and Conditions or for any reason whatever or no reason, with or without notice, in addition to any and all other remedies available at law or in equity.</p>
+
+            <h3>8. Indemnification</h3>
+            <p>You agree to defend GiftCast and its affiliates, directors, officers, employees, agents, representatives, members, proprietors, partners, shareholders, servants, principals, predecessors, successors, assigns, accountants, attorneys, and contractors (“GiftCast Indemnitees”) against all claims, actions, suits, and other proceedings of third parties arising out of or incurred in connection with: this Service, the Service Materials, or the User Materials; your use of this Service, the Service Materials, and the User Materials; your fraud, violation of law, or willful misconduct; the acts or omissions of any third party; or, any breach by you of these Terms and Conditions (collectively, “Claims”) and you agree to indemnify and hold all GiftCast Indemnitees harmless from and against all judgments, losses, obligations, risks, liabilities, damages, costs, settlements, and expenses (including, but not limited to, reasonable attorneys’ fees and attorneys’ disbursements) arising out of or incurred in connection with such Claims. You may not settle any Claim without the prior written consent of GiftCast.</p>
+
+            <h3>9. Complaint Procedure</h3>
+            <p>If you believe that any content or postings on this Service violate your intellectual property or other rights, please send to GiftCast at the address listed in Section 4, addressed to the attention of Web Manager, a comprehensive detailed notice setting forth all applicable facts and assertions, including (1) your address, telephone number and e-mail address, (2) a statement by you that you have a good faith belief that the disputed use is not authorized by you or owner of the item or rights, your or the owner’s agent, or law, (3) a statement by you, made under penalty of perjury, that the information in your notice is accurate and that you are the owner of the item or rights in question or are authorized to act on the owner's behalf, and (4) your electronic or physical signature or the electronic or physical signature of the owner of the item or right in question. Additionally, if the item or right in question involves one or more copyrights, your notice must be made in accordance with the requirements of the Digital Millennium Copyright Act ("DMCA"), as GiftCast processes, investigates, and responds to notifications of alleged infringement in accordance with the DMCA and other applicable intellectual property laws. Upon receipt of notices complying or substantially complying with the DMCA, GiftCast will act expeditiously to remove or disable access to any material claimed to be infringing or claimed to be the subject of infringing activity and will act expeditiously to remove or disable access to any reference or link to material or activity that is claimed to be infringing. GiftCast will terminate access for any members who are repeat infringers. For copyright complaints, please send to GiftCast's "Copyright Agent" at the address listed in Section 4 (or to <a href="mailto:copyright@GiftCast.com">copyright@GiftCast.com</a>, with "COPYRIGHT COMPLAINT" in the subject line), a comprehensive detailed notice in accordance with the requirements of the DMCA, including: (1) a description of the copyrighted work that has been infringed and the specific location on the Service where such work is located; (2) a description of the location of the original or an authorized copy of the copyrighted work; (3) your address, telephone number and e-mail address; (4) a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent or the law; (5) a statement by you, made under penalty of perjury, that the information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner’s behalf; and (6) an electronic or physical signature of the owner of the copyright or the person authorized to act on behalf of the owner of the copyright interest. </p>
+
+            <h3>10. Use of the Internet</h3>
+            <p>Use of the Internet is solely at your own risk and is subject to all applicable local, state, national, and international laws and regulations. Without limiting anything else in these Terms and Conditions or otherwise, neither GiftCast nor its contractors will be liable for any loss resulting from failure of electronic or mechanical equipment or communication lines, telephone or other interconnect problems, computer viruses, unauthorized access, theft, operator errors, severe weather, earthquakes, natural disasters, strikes or other labor problems, wars, or governmental restrictions.</p>
+
+            <h3>11. User Content Agreement</h3>
+            <p>By using the GiftCast service, you agree:
+                -to submit no Materials that contain content that is unlawful, defamatory, offensive, abusive, libelous, threatening, pornographic, harassing, racially or ethnically offensive or otherwise unfit; Materials containing advertisement or solicitation of business; Materials that do not infringe or misappropriate any patent, copyright, trademark, trade secret or any other proprietary intellectual property rights of others; or Materials that encourage any illegal activity, criminal offense or civil liability; 
+                -to submit no unauthorized or unsolicited bulk messages or any other solicitations or communications through the GiftCast Service; 
+                -to not impose an unreasonably large load (bandwidth) on the GiftCast Service, or use a computer programming routine, file or device to damage or interfere with the operation of the GiftCast Service;
+                -to be solely responsible for photos, captions to photos, videos, messages (sent and received), and other content that is uploaded, published, or displayed on or through the GiftCast Service;
+            -to be responsible at your sole cost and expense for creating backup copies and replacing any Content you post or store on the Service or provide to GiftCast;
+        </p>
+        <p><strong>You also agree that: </strong><br>
+        -GiftCast has no obligation to monitor any of the Materials, but may do so; 
+        -If you terminate your registration, your Materials will be deleted from the GiftCast Service; GiftCast will reasonably attempt to delete any Materials you provide, however, you acknowledge and agree that copies, derivatives of the Materials, or copies may still reside within the Service, such as, for instance, backup copies; 
+        -GiftCast does not guarantee, nor is GiftCast responsible for, the removal of all traces of the Materials from the Service after you delete the Materials or after your registration is terminated; 
+    -GiftCast is in no way responsible for the deletion of the copies of the Materials that reside outside of the Service; 
+-GiftCast is authorized to make copies thereof as they deem necessary in order to facilitate the posting and storage of the User Content on the Service. GiftCast may delete or remove without notice any Service Content or User Content in its sole discretion, for any reason or no reason, including Content that in the sole judgment of GiftCast, might be offensive, illegal, or that might violate the rights, harm or threaten the safety of users or others.</p>
+<h3>12. GiftCast Forums User Agreement</h3>
+<p>By accessing the GiftCast forums, you agree to be legally bound by the following terms. You agree: 
+-to not post any abusive, obscene, vulgar, slanderous, hateful, threatening, sexually-oriented or any other material that may violate any laws to the GiftCast forums. Doing so may lead to you being immediately and permanently banned, with notification of your Internet Service Provider if deemed required by us. The IP address of all posts are recorded to aid in enforcing these conditions. </p>
+<p>GiftCast reserves the right to store any information in a database that the user has entered in the GiftCast forums. Furthermore, GiftCast has the right to remove, edit, move, or close any topic at any time in the GiftCast forums should we see fit.</p>
+
+<h3>13. Links to Other Web Sites</h3>
+<p>This Service may, from time to time, contain links to third-party Internet Web sites for the convenience of users in locating, identifying, referencing, and/or purchasing information, products, or services. These links may appear in the form of text links, advertisements, banners, buttons, integrated gift services, digital cash, digital gift certificates, or otherwise. These sites are maintained by organizations over which GiftCast exercises no control, and GiftCast expressly disclaims any and all responsibility for the content (including, without limitation, information, links, text, graphics, and other items), completeness, and accuracy of and errors and omissions related to such Web sites and the information, offers, products, and services provided or offered by or advertised on these third-party sites, including, without limitation, the availability and pricing of any products or services. GiftCast additionally disclaims any and all responsibility for the transactions that you conduct or enter into with the owners or operators of these Web sites. Further, neither GiftCast nor its affiliates endorses the individuals, companies, or other persons or entities, or any products or materials associated with such individuals, companies, or other persons or entities, that provide products, information, or services. <u>You should carefully review their privacy statements and other conditions of use.</u></p>
+
+<p>WITHOUT LIMITING ANYTHING ELSE IN THESE TERMS AND CONDITIONS OR OTHERWISE, GIFTCAST MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE QUALITY, FITNESS, WORKMANSHIP, VALUE, APPROPRIATENESS, OR RELIABILITY OF THE PRODUCTS OR SERVICES AVAILABLE VIA OR ON THESE SITES OR THE SOLVENCY OR FINANCIAL VIABILITY OF ANY ADVERTISER, LICENSOR, THIRD PARTY, OR AFFILIATE. WITHOUT LIMITING ANYTHING ELSE, GIFTCAST WILL NOT REIMBURSE OR INDEMNIFY YOU FOR ANY LOSSES YOU MAY INCUR AS A RESULT OF TRANSACTIONS WITH ANY OTHER THIRD PARTY OR OTHERWISE. USERS ARE ADVISED TO USE DISCRETION IN SELECTING COMPANIES TO DO BUSINESS WITH ONLINE.</p>
+
+<h3>14. Fraudulent Activities</h3>
+<p>GiftCast reserves the right to freeze or close any account suspected of fraudulent activities or connected to terror or money laundering activity. Accounts may be frozen at the sole discretion of GiftCast until a review has been conducted and the validity of the account is confirmed.</p>
+<h3>15. Governing Law and Jurisdiction</h3>
+<p>Except as otherwise expressly provided in any other written agreement between you and GiftCast, these Terms and Conditions, including, without limitation, the Privacy Statement, represent the entire agreement between you and GiftCast with respect to the subject matter hereof, and supersede any and all prior and contemporaneous written and oral representations, understandings, and agreements, express and implied, and will be governed by and construed in accordance with the laws of the State of New Jersey, without reference to its conflict of law rules; <strong>PROVIDED, HOWEVER, THAT THE TERMS OF ANY APPLICABLE LAW NOW OR HEREAFTER ENACTED THAT IS BASED ON, DERIVED FROM, SIMILAR TO, OR CONNECTED WITH THE UNIFORM COMPUTER INFORMATION TRANSACTIONS ACT DRAFTED BY THE NATIONAL CONFERENCE OF COMMISSIONERS ON UNIFORM STATE LAWS OR THE CONVENTION ON CONTRACTS FOR THE INTERNATIONAL SALE OF GOODS SHALL NOT APPLY EXCEPT TO THE EXTENT THAT THE LAW EXPRESSLY PROHIBITS ALTERATION BY THESE TERMS AND CONDITIONS OF THE APPLICABILITY OF ONE OR MORE SECTIONS OF THE LAW. .</strong> By accessing, viewing, or using any of the works, content, or materials on this Service, you consent to the exclusive jurisdiction of the federal and state courts presiding in Delaware and North Carolina, U.S.A., and agree to accept service of process by personal delivery or mail and hereby waive any and all jurisdictional and venue defenses otherwise available.</p>
+
+<p>We participate in the Better Business Bureau's BBBOnLine Program. This means that we have committed to cooperating with BBB efforts to resolve disputes that may arise under this contract. Upon your request, we will agree to participate in a BBB dispute resolution process to resolve these disputes. There are limits as to the kinds of claims that the BBB will handle -- call the BBB of New Jersey for more information. Other than for those disputes resolved through the BBB dispute resolution process, you consent to exclusive jurisdiction and venue in the courts of Delaware or North Carolina.</p>
+
+
+<h3>16. Securities Information</h3>
+<p>This Service and the information contained herein do not constitute an offer or a solicitation of an offer for the purchase or sale of any securities. This Service may contain information and press releases about GiftCast, and although this information was believed to be accurate as of the date prepared, GiftCast disclaims any duty or obligation to update such information. To the extent that any information is deemed to be a “forward looking statement” as defined in the rules and regulations of the Securities Act of 1933, as amended, such information is intended to fit within the “safe harbor” for forward looking information and is subject to material risk factors which may or may not be disclosed herein.</p>
+
+<h3>17. Payment Card Industry Data Security Standard and Related Standards and Regulations</h3>
+<p>You acknowledge that GiftCast has no control over its partners, merchants, and any third party sites which appear or are linked to from the personal registries on the Service. GiftCast has no knowledge and makes no representation, warranty, or guarantee that such partners, merchants, or third parties are compliant with the Payment Card Industry Data Security Standard and related standards and regulations.</p>
+
+<h3>18. Miscellaneous</h3>
+<p>This Service is controlled and operated by GiftCast from its offices within the United States. Without limiting anything else, GiftCast makes no representation that the works, content, materials, services, information, or products available on, in, or through the Service are appropriate or available for use in other locations. Access to them from territories where they are illegal is prohibited. Those who choose to access this Service from other locations do so on their own volition and are responsible for compliance with applicable laws. Headings used in these Terms and Conditions, including, without limitation, the Privacy Statement, are for reference only and shall not affect the interpretation of these Terms and Conditions (or the Privacy Statement). The waiver or failure of GiftCast to exercise in any respect any right provided hereunder shall not be deemed a waiver of such right in the future or a waiver of any other rights established under these Terms and Conditions. NEITHER THESE TERMS AND CONDITIONS, NOR ANY RIGHTS OR OBLIGATIONS UNDER THESE TERMS AND CONDITIONS, MAY BE ASSIGNED, DELEGATED, TRANSFERRED, OR MADE THE SUBJECT OF A SECURITY INTEREST OR OTHERWISE ENCUMBERED, IN WHOLE OR IN PART, BY YOU WITHOUT THE PRIOR WRITTEN CONSENT OF GIFTCAST. ANY ASSIGNMENT IN VIOLATION OF THIS PARAGRAPH SHALL BE VOID.</p>
+
+
+
+
+
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 pull-right">
+                    <div class="social_icon text-center">
+                        <h3>Follow Us</h3>
+                        <div class="">
+                            <a target="_blank" href="https://www.facebook.com/GiftCast-1749903395028756/"><amp-img alt="Facebook" src="images/facebook.png" width="15" height="28"></amp-img></a>
+                            <a target="_blank" href="https://twitter.com/giftcast1"><amp-img alt="Twitter" src="images/twitter.png" width="30" height="25"></amp-img></a>
+                            <a target="_blank" href="https://www.instagram.com/giftcast/"><amp-img alt="Instagram" src="images/instagram.png" width="26" height="27"></amp-img></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="copy-right">
+                        <a class="visible-mobile" href="support.html">Support</a> <a class="suppot-toggle visible-desktop" href="javascript:void(0);">Support</a> | <a href="terms-and-conditions.html">Terms of Use</a>  |  <a href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- support popup -->
+    <div class="popup-support">
+        <div class="supprt-model">
+            <div class="model-header"><span class="close-model"></span><h3>Support</h3></div>
+            <div class="support-content">
+                <p>
+                    <strong>We are here to help <br>when you need assistance.</strong>
+                </p>
+                <p style="font-size: 80%">Please contact our Customer Care team at</p>
+
+                <p><a  style="font-size: 125%; font-weight: 500" href="mailto:customercare@giftcast.me" class="email">customercare@giftcast.me</a></p>
+            </div>
+        </div>
+        <div class="close-overlay"></div>
+    </div>
+  </body>
+</html>
